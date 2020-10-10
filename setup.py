@@ -6,10 +6,10 @@ with open('README.md', 'r') as fh:
 
 setup(
 
-    name='web',
-    version='0.0.1',
-    description='Say hello!',
-    py_modules=["helloworldpdjsilsz"],
+    name='selebutilities',
+    version='0.0.3',
+    description='Lots of functionalities (methods) for selenium webdriver. Should take a look!',
+    py_modules=["selebutilities"],
     package_dir={'': 'src'},
 
     long_description=long_description,

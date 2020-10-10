@@ -132,7 +132,7 @@ class WDShorcuts:
         driver = self.__arg_driver
         driver.get(new_url)
 
-    def del_dialog_box(self, class_name):
+    def del_anything_by_class(self, class_name):
         """
         :param class_name: Deleta por Class, nome
         :return: javascript
@@ -146,6 +146,6 @@ class WDShorcuts:
             driver.implicitly_wait(10)
             driver.execute_script(f"return document.getElementsByClassName('{class_name}')[0].remove();")
         except JavascriptException:
-            print('Elemento não encontrado em self.del_dialog_box')
+            raise JavascriptException(f'Class {class_name} not found')
         else:
-            print('certo')
+            print('OK')

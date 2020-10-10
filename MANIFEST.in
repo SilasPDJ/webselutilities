@@ -1,0 +1,7 @@
+include *.txt
+recursive-include dist *.whl
+recursive-include src *.exe
+recursive-include src *.py
+recursive-include src *.pyc
+recursive-include test *.py
+recursive-include wbselutilities_distro *.md

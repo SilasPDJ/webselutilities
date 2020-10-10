@@ -1,4 +1,5 @@
-from src.webdriver_utilities import Options, webdriver
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 # from whatsapp.dialog_profile_path import profiles_main_folder
 
 # from default.settings.set_paths import SetPaths
